@@ -240,7 +240,7 @@ void UTIL_ProcessReport(int iClient, int iVictim, const char[] szReason) {
   Discord_StartMessage();
   Discord_SetUsername("Report System");
   Discord_SetColor(0xAA0000);
-
+  Discord_SetContent("<@&713085296115187823>");
   // Server
   GetConVarString(FindConVar("hostname"), szBuffer, sizeof(szBuffer));
   Discord_AddField("Server", szBuffer);
